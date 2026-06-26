@@ -1,0 +1,47 @@
+{
+  "name": "gaokao-advisor",
+  "private": true,
+  "version": "0.1.0",
+  "description": "高考志愿填报顾问 v0 — Gaokao college-application advisor (张雪峰-style, employment-aware, 冲/稳/保 tiers).",
+  "scripts": {
+    "dev": "next dev -p 3999",
+    "build": "next build",
+    "start": "next start -p 3999",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"*.md\" \"docs/**/*.md\"",
+    "seed": "tsx src/scripts/seed.ts",
+    "download": "tsx src/scripts/download.ts",
+    "parse": "tsx src/scripts/parse.ts",
+    "refresh": "tsx src/scripts/refresh.ts",
+    "scheduler": "tsx src/scripts/scheduler.ts",
+    "test": "vitest run",
+    "eval": "tsx src/eval/run.ts",
+    "verify": "tsx src/scripts/verify.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "next": "14.2.15",
+    "node-cron": "^3.0.3",
+    "pdf-parse": "^2.4.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.15",
+    "prettier": "^3.3.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.2",
+    "vitest": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

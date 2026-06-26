@@ -1,0 +1,41 @@
+{
+  "_readme": "Download config for `pnpm download`. Each entry is either a DIRECT file URL (.pdf/.xls/.xlsx) or a PAGE url (the downloader auto-discovers file links on it). Files are saved to data/sources/raw/<province>/<year>/ and recorded in manifest.json with their source URL for your verification. URLs below were located on the official sites on 2026-06 and may rotate yearly — replace as needed. After downloading, the raw files still need parsing into the CSV schemas (ask to wire up the xlsx/pdf parser).",
+  "sources": [
+    {
+      "province": "hebei",
+      "year": 2025,
+      "type": "rank-table",
+      "url": "http://file.hebeea.edu.cn/files/article/2025/06/20250624193800_658.pdf",
+      "note": "河北 2025 物理/历史科目组合 一分一段表 (PDF, 官方 hebeea 文件服务器)"
+    },
+    {
+      "province": "shandong",
+      "year": 2025,
+      "type": "rank-table",
+      "url": "https://www.sdzk.cn/Floadup/file/20250625/6388646133710894671069456.xls",
+      "note": "山东 2025 夏季高考文化成绩 一分一段表 (Excel, 官方 sdzk)"
+    },
+    {
+      "province": "shandong",
+      "year": 2025,
+      "type": "provincial-lines",
+      "url": "https://www.sdzk.cn/Floadup/file/20250625/6388646601596985266621362.pdf",
+      "note": "山东 2025 各类别分数线 (PDF, 官方 sdzk)"
+    },
+    {
+      "province": "shandong",
+      "year": 2025,
+      "type": "admission-lines",
+      "url": "https://www.sdzk.cn/Floadup/file/20250719/6388855130412530367357143.xls",
+      "note": "山东 2025 普通类常规批第1次志愿投档情况表 (Excel, 官方 sdzk) — 各院校专业组投档最低分+位次"
+    },
+    {
+      "province": "hebei",
+      "year": 2025,
+      "type": "page-discover-example",
+      "url": "https://hebei.eol.cn/hebgd/202506/t20250624_2676840.shtml",
+      "note": "示例：给一个公告页 URL，下载器会自动发现页内的 .pdf/.xls 链接。可删除或替换为官方 hebeea 公告页。",
+      "enabled": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+province,year,track,batch,minScore,source
+河北,2025,物理,本科批,445,real:csv/sample
+河北,2025,历史,本科批,448,real:csv/sample
+河北,2024,物理,本科批,448,real:csv/sample
+四川,2025,理科,本科一批,525,real:csv/sample
+山东,2025,综合,特殊类型招生控制线,521,real:sdzk/分数线
+山东,2025,综合,一段线,441,real:sdzk/分数线
+山东,2025,综合,二段线,150,real:sdzk/分数线
