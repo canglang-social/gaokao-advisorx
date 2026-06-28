@@ -135,9 +135,9 @@ pnpm download hebei      # 只下河北
 pnpm parse               # 解析已下载文件 → data/sources/*.csv（山东：一分一段+投档+分数线+标签）
 DATA_SOURCE=real pnpm refresh   # 把真实 CSV 载入存储
 DATA_SOURCE=real pnpm dev        # 用真实数据跑应用
-pnpm test                # 单测（含 山东 解析器，27 例）
-pnpm eval                # 引擎逻辑评测（mock 数据，22 例）
-pnpm verify              # 真实数据校验（山东，对照 sdzk.cn 官方锚点，21 例）
+pnpm test                # 单测（含 山东 解析器，7 个文件 40 例）
+pnpm eval                # 引擎逻辑评测（mock 数据，24 例）
+pnpm verify              # 真实数据校验（山东，对照 sdzk.cn 官方锚点 + 完整性 + 引擎合理性）
 ```
 
 ## 如何确认结果正确 How to validate results
